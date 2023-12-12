@@ -10,7 +10,7 @@
 - [Recovery Flashing Steps](#flashing-dsp-recovery)
 - [ROM Flashing Steps](#flashing-dsp-rom) (Using Recovery)
 - [ROM Flashing Steps](#flashing-using-pc) (Using PC)
-- [F2FS Conversion (Highly Recommended)](#f2fs-conversion-highly-recommended)
+- [Issues](#issues)
 
 ## Requirements
 - Eyes and Brain.
@@ -60,14 +60,20 @@
 
 ## Flashing DSP ROM
 
-1. **Flash Android 11 Firmware:**
+1. **Flash Android 11 Firmware**
 2. **Flash The Rom File**
 3. **Format Data (type yes)**
    - You can skip this step only if you are already using a dynamic rom and decrypted.
 5. **DFE Neo (Optional And Not Recommended)**
    - Flash DFE Neo if desiring to stay decrypted; otherwise, skip this step.
    - You have to flash DFE if you were decrypted before to stay decrypted.
-6. **System Reboot:**
+6. **Change your data partition FS:**
+   - Tap one menu button on the recovery.
+   - Select manage partition.
+   - Select data.
+   - Tap on change FS
+   - Select F2FS
+7. **System Reboot**
    - Reboot your system. Ignore warnings like "No OS Installed."
 
 
@@ -81,22 +87,27 @@
    - Check if your device is connected or not. If not then check your drivers again.
    ```bash
    fastboot devices
-3. Now  extract the recovery_dynamic.zip and you will find an img file. run this cmd to flash the recovery:
+3. **Now  extract the recovery_dynamic.zip and you will find an img file. run this cmd to flash the recovery:**
    ```bash
    fastboot flash recovery <drag and drop that img file here>
-4. Flash the super_empty file:
+4. **Flash the super_empty file:**
    ```bash
    fastboot wipe-super <drag and drop super_empty.img file here>
-5. Now boot into your recovery
-6. Flash ROM zip
-7. Format Data
-8. Reboot To System ( Ignore warnings like "No OS Installed.")
+5. **Now boot into your recovery**
+6. **Flash ROM zip**
+7. **Format Data**
+8. **Change your data partition FS:**
+   - Tap one menu button on the recovery.
+   - Select manage partition.
+   - Select data.
+   - Tap on change FS
+   - Select F2FS
+9. Reboot To System ( Ignore warnings like "No OS Installed.")
 
-## F2FS Conversion (Highly Recommended)
+## Issues
+**You may face issues with storage permission on selected apps/games. Please join the [support group](https://t.me/EvolutionXRaphael_v2) and type `#storagefix`** 
 
-- Switch to F2FS file system for enhanced performance after flashing the ROM. This step wipes your data partition, so perform it after flashing the ROM. Navigate to OFOX recovery menu > manage partition > select data > change fs > F2FS.
-
-# Credits
+## Credits
 - [Joey](https://t.me/shaughzam) for the ROM
 - [Pranav Talmale](https://t.me/raphael_alpha) for legacy to dynamic file.
 - [404](https://t.me/Laz_man) for recovery.
