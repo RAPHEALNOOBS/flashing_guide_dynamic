@@ -18,8 +18,6 @@
 ## All Necessary Files
 - [ROM](https://evolution-x.org/device/raphael)
 - [Recovery](files/recovery_dynamic.zip?raw=true)
-- [Legacy To Dynamic](files/legacy_to_dynamic.zip?raw=true)
-- [Super Empty](files/super_empty.img?raw=true)
 - [Firmware](https://xiaomifirmwareupdater.com/firmware/raphaelin/stable/V12.5.1.0.RFKINXM/) (India)
 - [Firmware](https://xiaomifirmwareupdater.com/firmware/raphael/) (Global, China, Europe)
 - [DFE](files/dfe.zip?raw=true) (Optional)
@@ -44,14 +42,14 @@
 
 
 ## Flashing DSP Recovery
+**You can skip this if you are using the recommended recovery already. If you are not sure which recovery you are using then just follow these steps as well won't harm anything.**
 
 1. **Backup Data:**
    - Ensure your data is backed up before proceeding.
 
 2. **Reboot to Recovery:**
 3. **Format Data (type yes)**
-4. **Flash Legacy to Dynamic ZIP File**
-5. **Flash The Dynamic Recovery**
+4. **Flash The Dynamic Recovery**
 
 **You may face errors like this, just ignore and continue.**
 <p align="center">
@@ -90,13 +88,10 @@
 3. **Now  extract the recovery_dynamic.zip and you will find an img file. run this cmd to flash the recovery:**
    ```bash
    fastboot flash recovery <drag and drop that img file here>
-4. **Flash the super_empty file:**
-   ```bash
-   fastboot wipe-super <drag and drop super_empty.img file here>
-5. **Now boot into your recovery**
-6. **Flash ROM zip**
-7. **Format Data**
-8. **Change your data partition FS:**
+4. **Now boot into your recovery**
+5. **Flash ROM zip**
+6. **Format Data**
+7. **Change your data partition FS:**
    - Tap one menu button on the recovery.
    - Select manage partition.
    - Select data.
@@ -109,6 +104,5 @@
 
 ## Credits
 - [Joey](https://t.me/shaughzam) for the ROM
-- [Pranav Talmale](https://t.me/raphael_alpha) for legacy to dynamic file.
 - [404](https://t.me/Laz_man) for recovery.
 
