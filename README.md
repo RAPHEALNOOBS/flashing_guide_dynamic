@@ -20,7 +20,6 @@
 - [Recovery](files/recovery_dynamic.zip?raw=true)
 - [Firmware](https://xiaomifirmwareupdater.com/firmware/raphaelin/stable/V12.5.1.0.RFKINXM/) (India)
 - [Firmware](https://xiaomifirmwareupdater.com/firmware/raphael/) (Global, China, Europe)
-- [DFE](files/dfe.zip?raw=true) (Optional)
 
 
 ## Preparation
@@ -57,24 +56,20 @@
 </p>
 
 ## Flashing DSP ROM
-
+**If you are flashing from another rom (not evolution-x) then please format data(type yes) first then reboot to recovery (menu>reboot>recovery) and continue rest of the steps. DON'T SKIP THIS**
 1. **Flash Android 11 Firmware**
 2. **Flash The Rom File**
 3. **Format Data (type yes)**
-   - You can skip this step only if you are already using a dynamic rom and decrypted.
-5. **DFE Neo (Optional And Not Recommended)**
-   - Flash DFE Neo if desiring to stay decrypted; otherwise, skip this step.
-   - You have to flash DFE if you were decrypted before to stay decrypted.
-6. **Change your data partition FS:**
+   - It is recommended to format data using ofox v11.1.0 to avoid storage permission issues in certain apps.
+5. **Change your data partition FS:**
    - Tap one menu button on the recovery.
    - Select manage partition.
    - Select data.
    - Tap on change FS
    - Select F2FS
-7. **System Reboot**
-   - Reboot your system. Ignore warnings like "No OS Installed."
-
-
+6. **System Reboot**
+   - Reboot your system. ( Ignore warnings like "No OS Installed.")
+ 
 
 ## Flashing using PC
 
