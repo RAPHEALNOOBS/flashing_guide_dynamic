@@ -16,7 +16,7 @@
 - Eyes and Brain.
 
 ## All Necessary Files
-- [ROM](https://evolution-x.org/downloads/raphael)
+- [ROM](https://evolution-x.org/device/raphael)
 - [Recovery](files/recovery_dynamic.zip?raw=true)
 - [Legacy To Dynamic](files/legacy_to_dynamic.zip?raw=true)
 - [Firmware](https://xmfirmwareupdater.com/firmware/raphaelin/stable/V12.5.1.0.RFKINXM/) (India)
